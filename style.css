@@ -25,8 +25,19 @@ img.rounded-full {
 }
 .row {
   display: flex;
-  justify-content: center; /* Para centralizar as imagens */
-  align-items: center; /* Alinha as imagens verticalmente ao centro */
-  gap: 50px; /* Aplica o gap diretamente no container flex */
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; /* Aumente o valor conforme necessário */
   margin-bottom: 20px;
+}
+
+.grupo-img {
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+.click {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
