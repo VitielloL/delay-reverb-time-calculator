@@ -7,7 +7,7 @@ Este projeto oferece uma **Calculadora de Delay e Reverb** para músicos e produ
 - Cálculo de valores de **Delay** com diferentes notas e suas variações (dotted e triplet).
 - Cálculo do **Reverb Size** e os tempos associados, como **Pre-Delay** e **Decay Time**.
 - Interface simples com uma tabela dinâmica para visualizar os valores gerados.
-- Links para as redes sociais de Lucas Vitiello e Impakt Records.
+- Links para as redes sociais do artista Vitiello, Spliff e da produtora Impakt Records.
 
 ## Tecnologias Utilizadas
 
