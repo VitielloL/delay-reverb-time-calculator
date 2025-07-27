@@ -41,3 +41,8 @@ img.rounded-full {
   justify-content: center; 
   align-items: center; 
 }
+
+/* Adicione para esconder as seções */
+.hidden {
+  display: none;
+}

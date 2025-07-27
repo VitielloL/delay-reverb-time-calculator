@@ -23,10 +23,10 @@ function calcularDelay(bpm) {
                 </tr>`;
         delayTable.innerHTML += row;
     });
-    }
+}
 
-    // Função para calcular os valores de reverb
-    function calcularReverb(bpm) {
+// Função para calcular os valores de reverb
+function calcularReverb(bpm) {
     const hallPreDelay = 60000 / bpm * 8 / 64;
     const hallDecay = 60000 / bpm * 8 - hallPreDelay;
     const bigRoomPreDelay = 60000 / bpm * 4 / 64;
@@ -54,18 +54,25 @@ function calcularDelay(bpm) {
                 </tr>`;
         reverbTable.innerHTML += row;
     });
-    }
+}
 
-    // Função principal para calcular os valores ao clicar no botão
-    function calcularValores() {
+// Função principal para calcular os valores ao clicar no botão
+function calcularValores() {
     let bpm = document.getElementById('bpm').value;
 
+    // Esconde as seções se o BPM for inválido
     if (bpm <= 0) {
         document.getElementById('reverbTable').innerHTML = '';
         document.getElementById('delayTable').innerHTML = '';
+        document.getElementById('reverbSection').classList.add('hidden');
+        document.getElementById('delaySection').classList.add('hidden');
         return;
     }
 
+    // Mostra as seções ao calcular
+    document.getElementById('reverbSection').classList.remove('hidden');
+    document.getElementById('delaySection').classList.remove('hidden');
+
     calcularDelay(bpm);   // Chama a função para calcular o delay
     calcularReverb(bpm);  // Chama a função para calcular o reverb
-    }
+}
